@@ -2,23 +2,27 @@
 <HTML>
 	<HEAD>
 	    <title>
-	        Pancake Music
+	         Pancake Music
 	    </title>
+	    <style>
+	        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+	        * {
+	            font-family: 'Nunito', sans-serif;
+	        }
+	        a {
+	            text-decoration:none;
+	        }
+	        a:hover {
+	            text-decoration:underline;
+	            cursor:pointer;
+	        }
+	    </style>
 	</HEAD>
 	<BODY>
-		<script>
-		    function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-var music = getParameterByName("music");
-if(music=="lmns"){
-    let audioObj = new Audio("https://cdn.discordapp.com/attachments/870112429286236160/917506744450707457/Rare_Americans_-_Baby_Boy_Official_Video.mp3");
-}
-		</script>
-	</BODY>
+	    <h1>Pancake Music</h1>
+	    <ul>Artists:
+	    <li><a href="/artist/rare-americans/">
+	        Rare Americans
+	    </a></li></ul>
+	   </BODY>
 </HTML>
